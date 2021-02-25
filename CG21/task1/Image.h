@@ -3,7 +3,7 @@
 
 #include <string>
 
-constexpr int tileSize = 16;
+constexpr int tileSize = 32;
 
 struct Pixel
 {
@@ -13,11 +13,12 @@ struct Pixel
   uint8_t a;
 };
 
-constexpr Pixel backgroundColor{0, 0, 0, 0};
+constexpr Pixel backgroundColor{63, 56, 81, 0};
 
 struct Image
 {
   explicit Image(const std::string &a_path);
+  Image();
   Image(int a_width, int a_height, int a_channels);
 
   int Save(const std::string &a_path);
@@ -30,6 +31,21 @@ struct Image
 
   Pixel GetPixel(int x, int y) { return data[width * y + x];}
   void  PutPixel(int x, int y, const Pixel &pix) { data[width* y + x] = pix; }
+  
+  Image& operator=(const Image& img)
+  {
+    width = img.width;
+    height = img.height;
+    channels = img.channels;
+    size = img.size;
+    data = new Pixel[img.Size()];
+    for (int i = 0; i < size; i++)
+    {
+      data[i] = img.data[i];
+    }
+    self_allocated = img.self_allocated;
+    return *this;
+  }
 
   ~Image();
 

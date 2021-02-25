@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dmitry/CG21/zadanie1
+CMAKE_SOURCE_DIR = /home/dmitry/CG21/task1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dmitry/CG21/zadanie1
+CMAKE_BINARY_DIR = /home/dmitry/CG21/task1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CG21/zadanie1/CMakeFiles /home/dmitry/CG21/zadanie1/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CG21/task1/CMakeFiles /home/dmitry/CG21/task1/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CG21/zadanie1/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dmitry/CG21/task1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+map.o: map.cpp.o
+
+.PHONY : map.o
+
+# target to build an object file
+map.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/map.cpp.o
+.PHONY : map.cpp.o
+
+map.i: map.cpp.i
+
+.PHONY : map.i
+
+# target to preprocess a source file
+map.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/map.cpp.i
+.PHONY : map.cpp.i
+
+map.s: map.cpp.s
+
+.PHONY : map.s
+
+# target to generate assembly for a file
+map.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/map.cpp.s
+.PHONY : map.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... map.o"
+	@echo "... map.i"
+	@echo "... map.s"
 .PHONY : help
 
 

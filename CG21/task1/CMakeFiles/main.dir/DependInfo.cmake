@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/dmitry/CG21/zadanie1/glad.c" "/home/dmitry/CG21/zadanie1/CMakeFiles/main.dir/glad.c.o"
+  "/home/dmitry/CG21/task1/glad.c" "/home/dmitry/CG21/task1/CMakeFiles/main.dir/glad.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -14,9 +14,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "dependencies/include/GLAD"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dmitry/CG21/zadanie1/Image.cpp" "/home/dmitry/CG21/zadanie1/CMakeFiles/main.dir/Image.cpp.o"
-  "/home/dmitry/CG21/zadanie1/Player.cpp" "/home/dmitry/CG21/zadanie1/CMakeFiles/main.dir/Player.cpp.o"
-  "/home/dmitry/CG21/zadanie1/main.cpp" "/home/dmitry/CG21/zadanie1/CMakeFiles/main.dir/main.cpp.o"
+  "/home/dmitry/CG21/task1/Image.cpp" "/home/dmitry/CG21/task1/CMakeFiles/main.dir/Image.cpp.o"
+  "/home/dmitry/CG21/task1/Player.cpp" "/home/dmitry/CG21/task1/CMakeFiles/main.dir/Player.cpp.o"
+  "/home/dmitry/CG21/task1/main.cpp" "/home/dmitry/CG21/task1/CMakeFiles/main.dir/main.cpp.o"
+  "/home/dmitry/CG21/task1/map.cpp" "/home/dmitry/CG21/task1/CMakeFiles/main.dir/map.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

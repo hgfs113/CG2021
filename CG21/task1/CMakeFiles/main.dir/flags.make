@@ -7,11 +7,11 @@ C_FLAGS =   -Wnarrowing
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/dmitry/CG21/zadanie1/dependencies/include/GLAD 
+C_INCLUDES = -I/home/dmitry/CG21/task1/dependencies/include/GLAD 
 
 CXX_FLAGS =   -Wnarrowing -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dmitry/CG21/zadanie1/dependencies/include/GLAD 
+CXX_INCLUDES = -I/home/dmitry/CG21/task1/dependencies/include/GLAD 
 

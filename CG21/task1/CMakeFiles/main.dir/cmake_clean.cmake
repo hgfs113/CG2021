@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/Player.cpp.o"
   "CMakeFiles/main.dir/glad.c.o"
   "CMakeFiles/main.dir/main.cpp.o"
+  "CMakeFiles/main.dir/map.cpp.o"
   "bin/main"
   "bin/main.pdb"
 )

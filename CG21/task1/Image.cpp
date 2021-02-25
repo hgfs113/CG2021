@@ -7,10 +7,19 @@
 
 #include <iostream>
 
+Image::Image()
+{
+  width = -1;
+  height = -1;
+  channels = 3;
+  size = 0;
+  data = nullptr;
+  self_allocated = false;
+}
 
 Image::Image(const std::string &a_path)
 {
-  if((data = (Pixel*)stbi_load(a_path.c_str(), &width, &height, &channels, 0)) != nullptr)
+  if((data = (Pixel*)stbi_load(a_path.c_str(), &width, &height, &channels, sizeof(Pixel))) != nullptr)
   {
     size = width * height * channels;
   }
